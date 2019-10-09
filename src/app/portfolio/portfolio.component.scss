@@ -1,0 +1,15 @@
+
+
+  .portfolio {
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+  
+   
+   .portfolio-card {
+    max-width: 43%;
+    margin: 1%;
+  }  
+
+}

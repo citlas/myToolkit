@@ -1,0 +1,13 @@
+<div class="portfolio">
+<mat-card class="portfolio-card" *ngFor="let project of projects">
+    <mat-card-header>
+      <mat-card-title>{{project.title}}</mat-card-title>
+      <mat-card-subtitle>{{project.subtitle}}</mat-card-subtitle>
+    </mat-card-header>
+    <a href={{project.link}}><img mat-card-image src={{project.image}} alt={{project.altImage}}></a> 
+    <mat-card-content>
+      <p>{{project.content}} </p>
+      
+    </mat-card-content>
+</mat-card>
+</div>
