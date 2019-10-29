@@ -1,49 +1,25 @@
 <h2>HTML</h2>
-<mat-card class="toolkit-card" *ngFor="let tool of htmlTools">
+<div class="toolkit-card">
+<mat-card *ngFor="let tool of htmlTools" >
+  <a href={{tool.link}}>
+      <!--<i class="material-icons"> {{tool.icon}}</i>-->
     <mat-card-header>
       <mat-card-title>{{tool.title}}</mat-card-title>
       <mat-card-subtitle>{{tool.subtitle}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src={{tool.image}} alt={{tool.altImage}}>
-    <mat-card-content>
-      <p>{{tool.content}} </p>
-      <a href={{tool.link}}>Let's go!</a>
-    </mat-card-content>
+  </a>  
 </mat-card>
-<!--
+</div>
+
 <h2>CSS</h2>
-<mat-card class="toolkit-card">
+<div class="toolkit-card">
+<mat-card *ngFor="let tool of cssTools" >
+  <a href={{tool.link}}>
+      <!--<i class="material-icons"> {{tool.icon}}</i>-->
     <mat-card-header>
-      <mat-card-title>{{title}}</mat-card-title>
-      <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+      <mat-card-title>{{tool.title}}</mat-card-title>
+      <mat-card-subtitle>{{tool.subtitle}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src={{image}} alt={{altImage}}>
-    <mat-card-content>
-      <p>{{content}} </p>
-    </mat-card-content>
+  </a>  
 </mat-card>
-
-<h2>Javascript</h2>
-<mat-card class="toolkit-card">
-    <mat-card-header>
-      <mat-card-title>{{title}}</mat-card-title>
-      <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src={{image}} alt={{altImage}}>
-    <mat-card-content>
-      <p>{{content}} </p>
-    </mat-card-content>
-</mat-card>
-
-<h2>More Frontend</h2>
-<mat-card class="toolkit-card">
-    <mat-card-header>
-      <mat-card-title>{{title}}</mat-card-title>
-      <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src={{image}} alt={{altImage}}>
-    <mat-card-content>
-      <p>{{content}} </p>
-    </mat-card-content>
-</mat-card>
--->
+</div>
